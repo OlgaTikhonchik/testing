@@ -54,11 +54,11 @@ img {
   margin-top: 20px;
   outline: 2px solid #ffffff;
 }
-.position {
+/* .position {
   position: relative;
   left: 160px;
   top: 0;
-}
+} */
 
 .title {
   font-weight: 700;
@@ -278,6 +278,7 @@ img {
   display: flex;
 }
 .bonus {
+  position: relative;
   width: 630px;
   height: 620px;
   background: linear-gradient(
@@ -508,6 +509,7 @@ img {
 
 /* ---------------FAQ--------------- */
 .faq {
+  position: relative;
   width: 1280px;
   border-radius: 12px;
   padding: 30px;
@@ -549,6 +551,7 @@ img {
 
 /* ---------------FOOTER--------------- */
 .footer {
+  position: relative;
   width: 1280px;
 }
 .footer__list {
