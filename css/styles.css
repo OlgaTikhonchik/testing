@@ -32,7 +32,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  /* width: 100%; */
+  
 }
 
 .visually-hidden {
@@ -52,7 +52,7 @@ img {
   max-width: 1600px;
   margin: 0 auto;
   margin-top: 20px;
-  outline: 2px solid #ffffff;
+  /* outline: 2px solid #ffffff; */
 }
 .position {
   position: relative;
@@ -75,7 +75,7 @@ img {
   display: flex;
   padding-bottom: 15px;
   padding-top: 15px;
-  outline: 2px solid #ffffff;
+  /* outline: 2px solid #ffffff; */
 
   left: 0px;
   right: 0px;
@@ -218,7 +218,7 @@ img {
 }
 
 .menu-left__description.active::after {
-  transform: rotate(180deg); /* Поворот стрелки */
+  transform: rotate(180deg); 
 }
 
 .menu-left__overlay {
