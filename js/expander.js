@@ -20,3 +20,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
   
+document.addEventListener('DOMContentLoaded', function () {
+    const faqTitles = document.querySelectorAll('.faq__item--title'); 
+  
+    faqTitles.forEach(function (title) {
+      title.addEventListener('click', function () {
+        
+        title.classList.toggle('active');
+      });
+    });
+  });

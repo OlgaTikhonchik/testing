@@ -217,6 +217,19 @@ img {
   margin-right: 17px;
 }
 
+.menu-left__description.active::after {
+  transform: rotate(180deg); /* Поворот стрелки */
+}
+
+.menu-left__overlay {
+  display: none; 
+  padding-left: 17px;
+}
+
+.menu-left__overlay.active {
+  display: block; 
+}
+
 .js-expand-content {
   display: none;
   overflow: hidden;
@@ -558,15 +571,16 @@ img {
   content: url(../image/faq.svg);
   position: absolute;
   right: 50px;
-  transform: translateY(-50%); 
+  
   transition: transform 0.3s ease; 
 }
 
 
 
-.faq__item.active .fag__item--title::after{
-  transform:translateY(-50%) rotate(180deg);
+.faq__item--title.active::after{
+  transform: rotate(180deg);
 }
+
 
 
 .faq__title::before {
