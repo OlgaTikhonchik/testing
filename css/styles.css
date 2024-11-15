@@ -262,12 +262,6 @@ button:focus {
   transition: max-height 0.3s ease;
 }
 
-.catalog {
-  /* margin-top: 10px; */
- 
-}
-
-
 .catalog__item {
   margin-bottom: 5px;
 }
@@ -360,12 +354,19 @@ button:focus {
     ),
     url(../image/banner/img_background.jpg);
   margin-right: 20px;
+  border-radius: 12px;
 }
 
 .bonus__img {
   position: absolute;
   top: 0;
   left: 175px;
+  border-radius: inherit;
+}
+
+.bonus__images{
+  border-radius: inherit;
+
 }
 
 .bonus__logo {
