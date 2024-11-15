@@ -54,11 +54,10 @@ img {
   margin-top: 20px;
   outline: 2px solid #ffffff;
 }
-/* .position {
+.position {
   position: relative;
   left: 160px;
-  top: 0;
-} */
+}
 
 .title {
   font-weight: 700;
@@ -153,10 +152,9 @@ img {
   margin-top: 20px;
   margin-right: 20px;
   width: 240px;
-  left: 380px;
+  left: 50px;
   background-color: #2d0d0d;
   border-radius: 12px;
-  position: absolute;
 }
 
 .menu-left__list {
