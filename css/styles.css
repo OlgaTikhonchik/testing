@@ -187,11 +187,11 @@ button:focus {
 
 /* ---------------MENU-LEFT--------------- */
 .menu-left {
+  height: 340px;
   padding: 17px 0;
   margin-top: 20px;
   margin-right: 20px;
   width: 240px;
-
   background-color: #2d0d0d;
   border-radius: 12px;
 }
@@ -246,6 +246,10 @@ button:focus {
 .menu-left__overlay {
   display: none; 
   padding-left: 17px;
+  width: 240px;
+  padding: 17px 0;
+  background-color: #2d0d0d;
+  border-radius: 12px;
 }
 
 .menu-left__overlay.active {
@@ -259,8 +263,11 @@ button:focus {
 }
 
 .catalog {
-  margin-top: 10px;
+  /* margin-top: 10px; */
+ 
 }
+
+
 .catalog__item {
   margin-bottom: 5px;
 }
@@ -691,9 +698,8 @@ button:focus {
 }
 
 .footer__arrow {
-  position: absolute;
-  /* position: fixed; */
+  position: absolute; 
   top: 5px;
   right: 15px;
   cursor:pointer;
-}
+} 
