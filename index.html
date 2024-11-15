@@ -19,6 +19,7 @@
     />
      <!-- <link rel="stylesheet" href="./css/reset.css" /> -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/expander.js"></script>
   </head>
   <body>
     <header class="header">
@@ -117,22 +118,26 @@
             >
           </li>
         </ul>
-        <p class="menu-left__description">Lorem ipsum belet </br> dolor sit ameiyt</p>
-        <ul class="catalog list">
-          <li class="catalog__item" ><a class="catalog__link link" href="">Review of 22Bet</a></li>
-          <li class="catalog__item"><a class="catalog__link link" href="">Registration</a></li>
-          <li class="catalog__item"><a class="catalog__link link" href="">22Bet Betting Expert Reviews</a></li>
-          <li class="catalog__item"><a class="catalog__link link" href="">Layouts and navigation</a></li>
-          <li class="catalog__item"><a class="catalog__link link" href="">Sports betting</a></li>
-          <li class="catalog__item"><a class="catalog__link link" href="">Sports offers</a></li>
-          <li class="catalog__item"><a class="catalog__link link" href="">Live betting</a></li>
-          <li class="catalog__item"><a class="catalog__link link" href="">Cash out</a></li>
-          <li class="catalog__item"><a class="catalog__link link" href="">Live stream</a></li>
-        </ul>
+        <div>
+            <p class="menu-left__description">Lorem ipsum belet </br> dolor sit ameiyt</p>
+          <div class="menu-left__overlay">
+            <ul class="catalog list catalog__overlay">
+              <li class="catalog__item" ><a class="catalog__link link" href="">Review of 22Bet</a></li>
+              <li class="catalog__item"><a class="catalog__link link" href="">Registration</a></li>
+              <li class="catalog__item"><a class="catalog__link link" href="">22Bet Betting Expert Reviews</a></li>
+              <li class="catalog__item"><a class="catalog__link link" href="">Layouts and navigation</a></li>
+              <li class="catalog__item"><a class="catalog__link link" href="">Sports betting</a></li>
+              <li class="catalog__item"><a class="catalog__link link" href="">Sports offers</a></li>
+              <li class="catalog__item"><a class="catalog__link link" href="">Live betting</a></li>
+              <li class="catalog__item"><a class="catalog__link link" href="">Cash out</a></li>
+              <li class="catalog__item"><a class="catalog__link link" href="">Live stream</a></li>
+            </ul>
+          </div>
+        </div>
        </section>
        <div>
         <section class="section hero ">
-        <!-- <img src="./image/hero/background-hero.png" alt="background-hero" /> -->
+       
         <div class="hero__wrapp">
           <div class="hero__wrapper">
             <div class="hero__wrapper--box">
@@ -408,31 +413,41 @@
       <section class="section faq position">
         <h2 class="faq__title title">FAQ</h2>
         <ul class="faq__list list">
-          <li class="faq__item">
-            <h3 class="faq__item--title">1. A 20Bet é legalizada no Brasil?</h3>
-            <p class="faq__item--text">
-              Sim, a casa de apostas tem licença emitida por Curaçao, que é
-              reconhecida no Brasil e a permite atuar por aqui.
-            </p>
+          <li class="faq__item ">
+            <h3 class="faq__item--title js-button-expander">1. A 20Bet é legalizada no Brasil?</h3>
+           <div class=" js-expand-content">
+            
+              <p class="faq__item--text">
+                Sim, a casa de apostas tem licença emitida por Curaçao, que é
+                reconhecida no Brasil e a permite atuar por aqui.
+              </p>
+         
+           </div>
           </li>
           <li class="faq__item">
-            <h3 class="faq__item--title">2. Existe aplicativo da 20Bet?</h3>
+            <h3 class="faq__item--title js-button-expander">2. Existe aplicativo da 20Bet?</h3>
+            <div class=" js-expand-content">
             <p class="faq__item--text">
               Sim, disponível para sistemas operacionais iOS e Android.
             </p>
+          </div>
           </li>
           <li class="faq__item">
-            <h3 class="faq__item--title">
+            <h3 class="faq__item--title js-button-expander">
               3. Tem bônus de boas-vindas na 20Bet?
             </h3>
+            <div class=" js-expand-content">
             <p class="faq__item--text">
               O pacote especial para novos usuários da 20Bet paga 100% sobre o
               primeiro depósito, com limite de 600 BRL.
             </p>
+          </div>
           </li>
           <li class="faq__item">
-            <h3 class="faq__item--title">4. Question</h3>
+            <h3 class="faq__item--title js-button-expander">4. Question</h3>
+            <div class=" js-expand-content">
             <p class="faq__item--text">Lorem ipsum dolor sit amet?</p>
+          </div>
           </li>
         </ul>
       </section>
@@ -502,5 +517,6 @@
       </div>
       <img class="footer__arrow" src="./image/footer/Arrow.png" alt="Arrow UP" />
     </footer>
+    <!-- <script src="./js/expander.js"></script> -->
   </body>
 </html>

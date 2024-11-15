@@ -76,26 +76,20 @@ img {
   padding-bottom: 15px;
   padding-top: 15px;
   outline: 2px solid #ffffff;
-  /* top: 0px; */
+
   left: 0px;
   right: 0px;
-  /* height: auto; */
+
   z-index: 100;
 }
 
 .header__main {
-  /* position: relative; */
-  /* left: 0; */
-
   padding-top: 80px;
 
   display: flex;
-  /* justify-content: space-between; */
-  /* flex-direction: column; */
+
   align-content: stretch;
-  /* align-items: center; */
-  /* align-items: flex-start;
-  gap: 20px; */
+
   width: 1600px;
   margin: 0 auto;
 }
@@ -171,14 +165,11 @@ img {
 
 /* ---------------MENU-LEFT--------------- */
 .menu-left {
-  /* position: absolute; */
-  /* position: static; */
   padding: 17px 0;
   margin-top: 20px;
   margin-right: 20px;
   width: 240px;
-  /* left: 60px;
-  top: 100px; */
+
   background-color: #2d0d0d;
   border-radius: 12px;
 }
@@ -226,6 +217,12 @@ img {
   margin-right: 17px;
 }
 
+.js-expand-content {
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
 .catalog {
   margin-top: 10px;
 }
@@ -260,8 +257,6 @@ img {
     ),
     url(../image/hero/background-hero.png);
   border-radius: 0px 0px 12px 12px;
-  /* flex: 1;
-  max-width: 1000px; */
 }
 
 .hero__wrapp {
@@ -292,8 +287,6 @@ img {
 /* ---------------DESCRIPTION--------------- */
 
 .description {
-  /* flex: 1;
-  max-width: 1000px; */
   width: 1280px;
   padding: 32px 20px 32px 20px;
   border-radius: 12px;
@@ -312,6 +305,7 @@ img {
 .bonus__wrapp {
   width: 1280px;
   display: flex;
+  
 }
 .bonus {
   position: relative;
@@ -555,11 +549,25 @@ img {
   text-align: center;
   margin-bottom: 26px;
 }
+.faq__item--title{
+  margin-bottom: 13px;
+
+}
+
 .faq__item--title::after {
   content: url(../image/faq.svg);
   position: absolute;
   right: 50px;
+  transform: translateY(-50%); 
+  transition: transform 0.3s ease; 
 }
+
+
+
+.faq__item.active .fag__item--title::after{
+  transform:translateY(-50%) rotate(180deg);
+}
+
 
 .faq__title::before {
   content: url(../image/bookmaker/left.png);
