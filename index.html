@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Website</title>
+    <meta name="description" content>
+    <meta property="og:site_name">
+    <meta property="og:title" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content />
+    <meta property="og:image" content />
+    <meta property="og:image:alt" content />
+    <meta property="og:locale" content="en">
+    <meta property="og:description" content>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -412,22 +421,22 @@
       </section>
       <section class="section faq position">
         <h2 class="faq__title title">FAQ</h2>
-        <ul class="faq__list list">
-          <li class="faq__item ">
-            <h3 class="faq__item--title js-button-expander">1. A 20Bet é legalizada no Brasil?</h3>
-           <div class=" js-expand-content">
+        <ul class="faq__list list" itemscope itemtype="https://schema.org/FAQPage">
+          <li class="faq__item " itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h3 class="faq__item--title js-button-expander" itemprop="name">1. A 20Bet é legalizada no Brasil?</h3>
+           <div class=" js-expand-content" itemscope  itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
             
-              <p class="faq__item--text">
+              <p class="faq__item--text" itemprop="text">
                 Sim, a casa de apostas tem licença emitida por Curaçao, que é
                 reconhecida no Brasil e a permite atuar por aqui.
               </p>
          
            </div>
           </li>
-          <li class="faq__item">
-            <h3 class="faq__item--title js-button-expander">2. Existe aplicativo da 20Bet?</h3>
-            <div class=" js-expand-content">
-            <p class="faq__item--text">
+          <li class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h3 class="faq__item--title js-button-expander" itemprop="name">2. Existe aplicativo da 20Bet?</h3>
+            <div class=" js-expand-content" itemscope  itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p class="faq__item--text" itemprop="text">
               Sim, disponível para sistemas operacionais iOS e Android.
             </p>
           </div>
