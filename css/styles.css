@@ -32,7 +32,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  
 }
 
 .visually-hidden {
@@ -52,7 +51,6 @@ img {
   max-width: 1600px;
   margin: 0 auto;
   margin-top: 20px;
-
 }
 .position {
   position: relative;
@@ -119,11 +117,11 @@ img {
   transition: color 250ms linear;
 }
 
-.site-nav__link:hover{
-  color:#fff72e;
+.site-nav__link:hover {
+  color: #fff72e;
 }
 
-.site-nav__link:focus{
+.site-nav__link:focus {
   color: #4cb63a;
 }
 
@@ -149,7 +147,8 @@ img {
   height: 45px;
   background-color: #4cb63a;
   color: #ffffff;
-  transition: color 250ms linear, border 250ms linear,background-color 250ms linear;
+  transition: color 250ms linear, border 250ms linear,
+    background-color 250ms linear;
 }
 
 .button:hover,
@@ -159,7 +158,6 @@ button:focus {
   background-color: transparent;
 }
 
-
 .button-list {
   display: flex;
 }
@@ -168,12 +166,13 @@ button:focus {
   background-color: transparent;
   color: #fff72e;
   border: 1px solid #fff72e;
-  transition: color 250ms linear, background-color 250ms linear, border 250ms linear;
+  transition: color 250ms linear, background-color 250ms linear,
+    border 250ms linear;
 }
 
 .button-list__link:hover,
-.button-list__link:focus{
-  color:#ffffff;
+.button-list__link:focus {
+  color: #ffffff;
   background-color: #4cb63a;
   border: 1px solid #4cb63a;
 }
@@ -198,7 +197,6 @@ button:focus {
 .menu-left__list {
   position: relative;
   padding: 10px 0;
-
 }
 
 .menu-left__list::after {
@@ -207,12 +205,15 @@ button:focus {
   bottom: 0;
   left: 15px;
   width: 208px;
-  height: 1px; 
+  height: 1px;
   margin-bottom: 20px;
   transform: rotate(360deg);
-  background: linear-gradient(225.57deg, rgba(255, 255, 255, 0.8) 0%,rgba(255, 255, 255, 0) 102.405%);
+  background: linear-gradient(
+    225.57deg,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0) 102.405%
+  );
 }
-
 
 .menu-left__item {
   margin-bottom: 14px;
@@ -239,7 +240,6 @@ button:focus {
   font-weight: 700;
   position: relative;
   margin-left: 17px;
-  
 }
 
 .menu-left__description::after {
@@ -253,11 +253,11 @@ button:focus {
 }
 
 .menu-left__description.active::after {
-  transform: rotate(180deg); 
+  transform: rotate(180deg);
 }
 
 .menu-left__overlay {
-  display: none; 
+  display: none;
   padding-left: 17px;
   width: 240px;
   padding: 17px 0;
@@ -266,7 +266,7 @@ button:focus {
 }
 
 .menu-left__overlay.active {
-  display: block; 
+  display: block;
 }
 
 .js-expand-content {
@@ -330,7 +330,7 @@ button:focus {
   margin-bottom: 9px;
 }
 .hero__subtitle {
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 
 /* ---------------DESCRIPTION--------------- */
@@ -354,7 +354,6 @@ button:focus {
 .bonus__wrapp {
   width: 1280px;
   display: flex;
-  
 }
 .bonus {
   position: relative;
@@ -377,9 +376,8 @@ button:focus {
   border-radius: inherit;
 }
 
-.bonus__images{
+.bonus__images {
   border-radius: inherit;
-
 }
 
 .bonus__logo {
@@ -409,7 +407,8 @@ button:focus {
   margin-bottom: 23px;
 }
 
-.bonus__button {
+.bonus__button,
+.hero__button {
   width: 175px;
   padding: 10px 32px;
   margin-right: 0;
@@ -606,26 +605,23 @@ button:focus {
   text-align: center;
   margin-bottom: 26px;
 }
-.faq__item--title{
+.faq__item--title {
   margin-bottom: 13px;
-
+  text-transform: uppercase;
+  color: #fff72e;
 }
 
 .faq__item--title::after {
   content: url(../image/faq.svg);
   position: absolute;
   right: 50px;
-  
-  transition: transform 0.3s ease; 
+
+  transition: transform 0.3s ease;
 }
 
-
-
-.faq__item--title.active::after{
+.faq__item--title.active::after {
   transform: rotate(180deg);
 }
-
-
 
 .faq__title::before {
   content: url(../image/bookmaker/left.png);
@@ -686,13 +682,13 @@ button:focus {
   display: flex;
   justify-content: center;
   padding-bottom: 32px;
-  
+
   margin-bottom: 34px;
   position: relative;
   padding: 10px 0;
 }
 
-.footer-card__list::after{
+.footer-card__list::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -700,9 +696,12 @@ button:focus {
   width: 1215px;
   height: 1px;
   box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(90.00deg, rgba(255, 247, 46, 0) 1.44%,rgb(255, 247, 46) 50.082%,rgba(255, 247, 46, 0) 98.724%);
-  
-  
+  background: linear-gradient(
+    90deg,
+    rgba(255, 247, 46, 0) 1.44%,
+    rgb(255, 247, 46) 50.082%,
+    rgba(255, 247, 46, 0) 98.724%
+  );
 }
 
 .footer-card__item:not(:last-child) {
@@ -727,8 +726,8 @@ button:focus {
 }
 
 .footer__arrow {
-  position: absolute; 
+  position: absolute;
   top: 5px;
   right: 15px;
-  cursor:pointer;
-} 
+  cursor: pointer;
+}

@@ -1,0 +1,107 @@
+/* ---------------HERO--------------- */
+.hero {
+  width: 1280px;
+  background: linear-gradient(
+    90deg,
+    rgb(65, 47, 47),
+    rgb(45, 13, 13) 50%,
+    rgb(65, 47, 47) 100%
+  );
+
+  border-radius: 0px 0px 12px 12px;
+
+  background: linear-gradient(
+      270deg,
+      rgb(19, 4, 4) -5.748%,
+      rgba(45, 13, 13, 0) 128.725%
+    ),
+    url(../image/hero/bonus-bg.png);
+}
+
+.hero__img {
+  display: flex;
+  position: relative;
+}
+
+.hero__img--asset {
+  position: absolute;
+  width: 321px;
+  left: 25px;
+  top: 190px;
+  opacity: 0.7;
+}
+
+.hero__img--gold {
+  position: absolute;
+  max-width: 531px;
+  height: 531px;
+  left: -215px;
+  top: -100px;
+  transform: rotate(35deg);
+}
+.hero__text--bonus {
+  padding-right: 20px;
+  border-right: 1px solid #ffffff;
+}
+
+/* -------------CARDS-------------- */
+.cards {
+  width: 1280px;
+}
+
+.cards__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cards__item {
+  flex: 1 1 calc(33.33% - 20px);
+}
+
+.cards__img {
+  width: 419px;
+  border-radius: 6px 6px 0px 0px;
+}
+
+.cards__title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff72e;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.cards__text {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.cards__button {
+  width: 220px;
+  height: 48px;
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
+.cards__wrapper {
+  width: 412px;
+
+  padding: 20px;
+  border-radius: 0px 0px 6px 6px;
+  background: linear-gradient(270deg, rgb(19, 4, 4), rgb(45, 13, 13) 100%);
+}
+
+.cards__wrapp {
+  height: 288px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 0px 0px 6px 6px;
+
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  background: linear-gradient(270deg, rgb(45, 13, 13), rgb(19, 4, 4) 100%);
+}
