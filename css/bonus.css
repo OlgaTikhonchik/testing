@@ -80,7 +80,7 @@
   width: 220px;
   height: 48px;
   margin-right: 0;
-  margin-bottom: 20px;
+  
 }
 
 .cards__wrapper {
@@ -92,7 +92,7 @@
 }
 
 .cards__wrapp {
-  height: 288px;
+ 
   display: flex;
   flex-direction: column;
 
