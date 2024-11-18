@@ -11,7 +11,7 @@
   border-radius: 0px 0px 12px 12px;
 
   background: linear-gradient(
-      270deg,
+      180deg,
       rgb(19, 4, 4) -5.748%,
       rgba(45, 13, 13, 0) 128.725%
     ),
@@ -57,6 +57,7 @@
 
 .cards__item {
   flex: 1 1 calc(33.33% - 20px);
+  cursor: pointer;
 }
 
 .cards__img {
@@ -80,7 +81,6 @@
   width: 220px;
   height: 48px;
   margin-right: 0;
-  
 }
 
 .cards__wrapper {
@@ -92,7 +92,6 @@
 }
 
 .cards__wrapp {
- 
   display: flex;
   flex-direction: column;
 
@@ -104,4 +103,122 @@
   box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
   background: linear-gradient(270deg, rgb(45, 13, 13), rgb(19, 4, 4) 100%);
+}
+
+/* -----------PAGE APP---------------- */
+
+.hero__app {
+  position: relative;
+  height: 380px;
+  background: linear-gradient(
+      165deg,
+      rgb(19, 4, 4) -0.013%,
+      rgba(45, 13, 13, 0) 128.725%
+    ),
+    url(../image/hero/background-hero.png);
+}
+
+.hero__wrapper {
+  padding-top: 72px;
+}
+
+.hero__images {
+  position: absolute;
+  width: 321px;
+
+  right: 90px;
+  top: 230px;
+  opacity: 0.7;
+}
+
+.hero__img--james_gold {
+  position: absolute;
+  width: 729px;
+  height: 729px;
+  right: -270px;
+  top: -290px;
+  transform: rotate(69deg);
+}
+
+.hero__img--iphone {
+  position: absolute;
+  width: 201px;
+  height: 335px;
+  right: 150px;
+  top: 49px;
+}
+
+.hero__logo {
+  position: absolute;
+  width: 227px;
+  height: 92px;
+  right: 380px;
+  top: 160px;
+}
+
+/* ----------download----- */
+
+.download {
+  width: 1280px;
+  height: 190px;
+  border-radius: 12px;
+  background-image: url(../image/download.png);
+}
+
+.download__wrapper {
+  display: flex;
+}
+
+.download__wrapp {
+  margin-right: 110px;
+}
+.download__img--text {
+  position: absolute;
+  width: 288px;
+
+  left: 250px;
+  top: 1px;
+}
+
+.download__img--iphone {
+  position: absolute;
+  width: 201px;
+  height: 175px;
+
+  left: 150px;
+  top: 15px;
+}
+
+.download__btn {
+  display: flex;
+  margin-right: 96px;
+  margin-left: auto;
+  padding-top: 63px;
+  padding-bottom: 63px;
+}
+
+.button__download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 259px;
+  height: 64px;
+  margin-right: 23px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.button__download:not(:first-child) {
+  margin-right: 0;
+}
+
+.button__download--ios::before {
+  content: url("../image/apple.svg");
+
+  margin-right: 10px;
+}
+
+.button__download--android::before {
+  content: url("../image/android.svg");
+  margin-right: 10px;
 }
