@@ -1617,6 +1617,12 @@ button:focus {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .footer__text {
+    left: 20px;
+  }
+}
+
 .footer__box {
   display: flex;
   align-items: center;
