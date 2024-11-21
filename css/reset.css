@@ -32,7 +32,8 @@ blockquote:before,blockquote:after,q:before q:after {
 ul,ol {
   display:block;
   position:relative;
-  /* width:100%; */
+  width:100%;
+  list-style: none;
   text-align:left;
   -webkit-padding-start:0;
   -moz-padding-start:0;
