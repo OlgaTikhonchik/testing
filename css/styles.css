@@ -567,7 +567,9 @@ button:focus {
   width: 100%;
   max-width: 1280px;
   background: linear-gradient(
-    90deg,
+    90deg,.features__banner>*{
+      flex: 1 1 50%;
+  }
     rgb(65, 47, 47),
     rgb(45, 13, 13) 50%,
     rgb(65, 47, 47) 100%
