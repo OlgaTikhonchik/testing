@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   
 document.addEventListener('DOMContentLoaded', function () {
-    const faqTitles = document.querySelectorAll('.faq__item--title'); 
+    const faqTitles = document.querySelectorAll('.faq-item__title'); 
   
     faqTitles.forEach(function (title) {
       title.addEventListener('click', function () {

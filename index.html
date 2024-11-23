@@ -4,531 +4,476 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Website</title>
-    <meta name="description" content>
-    <meta property="og:site_name" content>
-    <meta property="og:title" content/>
+    <meta name="description" content />
+    <meta property="og:site_name" content />
+    <meta property="og:title" content />
     <meta property="og:type" content="website" />
     <meta property="og:url" content />
     <meta property="og:image" content />
     <meta property="og:image:alt" content />
-    <meta property="og:locale" content="en">
-    <meta property="og:description" content>
+    <meta property="og:locale" content="en" />
+    <meta property="og:description" content />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-   
-    <link rel="stylesheet" href="./css/reset.css"/>
-    <link rel="stylesheet" href="./css/styles.css" />
-    
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css">
   </head>
   <body>
-    <header class=" header">
-   
-        <button class="header__btn-menu" >
-          <svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <header class="header">
+      <a href="#" class="logo header__logo">
+        <img src="./image/header/logo-header.svg" alt="logo" title />
+      </a>
+      <button class="header__btn-menu" style="display: none;">
+        <svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
             <rect y="0" width="16" height="3" rx="1.5"></rect>
             <rect y="6.5" width="16" height="3" rx="1.5"></rect>
             <rect y="13" width="16" height="3" rx="1.5"></rect>
           </svg>
-        </button>
-        <a href="./index.html" class="logo">
-            <img src="./image/header/logo.png" alt="logo" class="logo__img" />
-          </a>
-     
-      <nav class="header__nav">
-        <!-- <a href="./index.html" class="logo">
-          <img src="./image/header/logo.png" alt="logo" class="logo__img" />
-        </a> -->
-        <ul class="site-nav list" >
-          <li class="site-nav__item">
-            <a class="site-nav__link link" href="">Games</a>
-            <img
-              src="./image/header/romb.svg"
-              alt="romb"
-              class="site-nav__img"
-            />
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link link" href="">Promotions</a>
-            <img
-              src="./image/header/romb.svg"
-              alt="romb"
-              class="site-nav__img"
-            />
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link link" href="">Tournaments</a>
-            <img
-              src="./image/header/romb.svg"
-              alt="romb"
-              class="site-nav__img"
-            />
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link link" href="romb">Live dealers</a>
-          </li>
+      </button>
+      <nav class="menu header__menu">
+        <ul class="">
+            <li class=""><a href="#" class="">Games</a></li>
+            <li class=""><a href="#" class="">Promotions</a></li>
+            <li class=""><a href="#" class="">Tournaments</a></li>
+            <li class=""><a href="#" class="">Live dealers</a></li>
         </ul>
-        <ul class="button-list list">
-          <li class="button-list__item">
-            <a href="" class="button button-list__link link">Log In</a>
-          </li>
-          <li class="button-list__item">
-            <a href="" class="button link">Register now</a>
-          </li>
-        </ul>
+        <a href="#" class="button header__button-login">Log In</a>
+        <a href="#" class="button header__button-register">Register now</a>
       </nav>
-      <!-- <ul class="button-list list">
-        <li class="button-list__item">
-          <a href="" class="button button-list__link link">Log In</a>
-        </li>
-        <li class="button-list__item">
-          <a href="" class="button link">Register now</a>
-        </li>
-      </ul> -->
-      <img class="header__img" src="./image/header/flag.png" alt="flag" />
-    </header>
-    <main>
-      <div class=" header__main">
-        <section class=" menu-left ">
-        <ul class="menu-left__list list">
-          <li class="menu-left__item">
-            <a href="" class="menu-left__link link">
-              <img
-                class="menu-left__img"
-                src="./image/menu-left/dice.svg"
-                alt="dice"
-              />
-              <span class="menu-left__text">Games</span>
-            </a>
-          </li>
-          <li class="menu-left__item">
-            <a href="" class="menu-left__link link">
-              <img
-                class="menu-left__img"
-                src="./image/menu-left/cash.svg"
-                alt="cash"
-              />
-              <span class="menu-left__text">Promotions</span>
-            </a>
-          </li>
-          <li class="menu-left__item">
-            <a href="" class="menu-left__link link">
-              <img
-                class="menu-left__img"
-                src="./image/menu-left/worldwide.svg"
-                alt="worldwide"
-              />
-              <span class="menu-left__text">Live Dealers</span></a
-            >
-          </li>
-          <li class="menu-left__item">
-            <a href="" class="menu-left__link link">
-              <img
-                class="menu-left__img"
-                src="./image/menu-left/calendar.svg"
-                alt="calendar"
-              />
-              <span class="menu-left__text">Hall of Fame</span></a
-            >
-          </li>
-          <li class="menu-left__item">
-            <a href="" class="menu-left__link link">
-              <img src="./image/menu-left/donation.svg" alt="donation" />
-              <span class="menu-left__text">VIP</span></a
-            >
-          </li>
-        </ul>
-        
-          <p class="menu-left__description">Lorem ipsum belet </br> dolor sit ameiyt</p>
-          <div class="menu-left__overlay js-expand-content">
-            <ul class="catalog list catalog__overlay">
-              <li class="catalog__item" ><a class="catalog__link link" href="">Review of 22Bet</a></li>
-              <li class="catalog__item"><a class="catalog__link link" href="">Registration</a></li>
-              <li class="catalog__item"><a class="catalog__link link" href="">22Bet Betting Expert Reviews</a></li>
-              <li class="catalog__item"><a class="catalog__link link" href="">Layouts and navigation</a></li>
-              <li class="catalog__item"><a class="catalog__link link" href="">Sports betting</a></li>
-              <li class="catalog__item"><a class="catalog__link link" href="">Sports offers</a></li>
-              <li class="catalog__item"><a class="catalog__link link" href="">Live betting</a></li>
-              <li class="catalog__item"><a class="catalog__link link" href="">Cash out</a></li>
-              <li class="catalog__item"><a class="catalog__link link" href="">Live stream</a></li>
-            </ul>
-          
-          </div>
-       </section>
-       <div>
-        <section class="section hero ">
-       
-        <div class="hero__wrapp">
-          <div class="hero__wrapper">
-            <div class="hero__wrapper--box">
-              <p class="hero__text">Overall Rating</p>
-              <span class="hero__number">91/100</span>
-            </div>
-            <h1 class="hero__title title">20Bet Brasil: Casa de Aposta </br> e Cassino</h1>
-            <p class="hero__subtitle">
-              A 20Bet apostas online é a novidade mais relevante no mercado de
-              apostas do Brasil
-            </p>
-            <a href="" class="button hero__button link">Register now</a>
-          </div>
-            <img  class="hero__images"
-              src="./image/hero/christoph-schadl.png"
-              alt="christoph-schadl-sherlock"
-            />
-        </div>
-       </section>
-       <section class="section description ">
-        <h2 class="visually-hidden">Description</h2>
-        <p class="description__text">
-          Formidabile sito di scommesse online, con 22Bet potrete realizzare i
-          vostri desideri, trasformando il vostro hobby preferito in una fonte
-          di guadagno. Questo allibratore è esperto di servizi di casinò e
-          sportsbook, consentendo a chiunque lo utilizzi di scegliere
-          l’esperienza di gioco che più li gratifichi.
-        </p>
-        <p class="description__text">
-          Si possono effettuare scommesse in pochi clic e bastano appena 24 ore
-          per ricevere il denaro vinto.
-        </p>
-       </section>
-       </div>
+      <a href="#" class="button outline header__button-login">Log In</a>
+      <a href="#" class="button header__button-register">Register now</a>
+      <div class="header__lang">
+        <img src="./image/header/flag.png" alt="flag" title>
       </div>
-      <section class="section bonus__wrapp position">
-        <section class="bonus">
+    </header>
+    <main class="main">
+      <aside class="sidebar-wrapper">
+         <section class=" content sidebar ">
+          <nav class="menu sidebar__menu">
+            <ul >
+              <li >
+                <a href="#" ><img src="./image/menu-left/dice.svg" alt="dice"  title/> Games </a>
+              </li>
+              <li >
+                <a href="#" > <img  src="./image/menu-left/cash.svg"  alt="cash"  title/> Promotions</a>
+              </li>     
+              <li >
+                <a href="#" ><img src="./image/menu-left/worldwide.svg" alt="worldwide"  title/>Live Dealers</a>
+              </li>
+              <li >
+                <a href="#" ><img src="./image/menu-left/calendar.svg" alt="calendar" title>Hall of Fame</a>
+
+              </li>
+              <li >
+                <a href="" > <img src="./image/menu-left/donation.svg" alt="donation" title/> VIP</a>
+              </li>
+            </ul>
+          </nav>
+        
+          <button class=" sidebar__links-button">Lorem ipsum belet dolor sit ameiyt</button>
+          <div class="sidebar__links ">
+           
+            <ul class=" sidebar__links-list ">
+              <li ><a  href="#" title>Review of 22Bet</a></li>
+              <li ><a  href="#" title>Registration</a></li>
+              <li ><a  href="#" title>22Bet Betting Expert Reviews</a></li>
+              <li ><a  href="#" title>Layouts and navigation</a></li>
+              <li ><a  href="#" title>Sports betting</a></li>
+              <li ><a  href="#" title>Sports offers</a></li>
+              <li ><a  href="#" title>Live betting</a></li>
+              <li ><a  href="#" title>Cash out</a></li>
+              <li ><a  href="#" title>Live stream</a></li>
+            </ul>
           
-          <img class="bonus__images"  src="./image/banner/james_gold_left.png" alt="james_gold" />
-          <img class="bonus__img" src="./image/banner/james_gold_right.png" alt="james_gold" />
-          <img class="bonus__logo" src="./image/banner/logo-banner.png" alt="logo-banner" />
-          <div class="bonnus__wrapper">
-            <h2 class="bonus__title title">100% BONUS UP TO 300€</h2>
-          <p class="bonus__desc">+100 free spins on your first deposit</p>
-          <a href="#" class="button bonus__button link">Register now</a>
-        </div>
+          </div>
+       </section>
+      </aside>
+      <section class="content-wrapper">
+          <section class="content hero">
+            <div class="background hero__background">
+              <img src="./image/hero/background-hero.png" alt="background-hero" title="">
+            </div>
+          
+          <div class="hero__wrapper">
+            <div class="hero__data">
+              <div class=" rating hero__rating">
+                <p >Overall Rating</p>
+                <span >91/100</span>
+              </div>
+              <h1 class="hero__title title general">20Bet Brasil: Casa de Aposta </br> e Cassino</h1>
+              <p class="hero__subtitle">
+                A 20Bet apostas online é a novidade mais relevante no mercado de
+                apostas do Brasil
+              </p>
+              <a href="#" class="button hero__button ">Register now</a>
+            </div>
+            <div class="image hero__images">
+              <img  
+                src="./image/hero/christoph-schadl.png"
+                alt="christoph-schadl-sherlock"
+              />
+            </div>
+          </div>
+          
         </section>
-       <div class="content__wrapp">
-            <section class="content content__catalog">
-              <h2 class="visually-hidden">Content</h2>
-              <ul class="content__list list">
-                <li class="content__item">Huge variety of Sports to Bet On</li>
-                <li class="content__item">Wide amount of Deposit Methods</li>
-                <li class="content__item">1000+ Casino Games from Best Providers</li>
-                <li class="content__item">Generous Winnings and Jackpots</li>
-                <li class="content__item">Mobile Apps for iOS and Android</li>
-                <li class="content__item">Largest selection of Live Betting Games</li>
-            </ul>
+
+        <section class="content article ">
+          <h2 class="visually-hidden">Article</h2>
+          <p >
+            Formidabile sito di scommesse online, con 22Bet potrete realizzare i
+            vostri desideri, trasformando il vostro hobby preferito in una fonte
+            di guadagno. Questo allibratore è esperto di servizi di casinò e
+            sportsbook, consentendo a chiunque lo utilizzi di scegliere
+            l’esperienza di gioco che più li gratifichi.
+          </p>
+          <p >
+            Si possono effettuare scommesse in pochi clic e bastano appena 24 ore
+            per ricevere il denaro vinto.
+          </p>
+        </section>
+        
+        <section class=" features">
+          <h2 class="visually-hidden">Features</h2>
+          <section class="features__wrapp">
+            <div class="cover features__banner">
+              <div class=" features-banner__background">
+                <img src="./image/banner/img_background.jpg" alt="background" title>
+              </div>
+             <div class="features-banner__data">
+              <img class="features-banner__images"  src="./image/banner/james_gold_left.png" alt="james_gold"  title/>
+              <img class="features-banner__img" src="./image/banner/james_gold_right.png" alt="james_gold"  title/>
+              
+              <div class="features-wrapper__data">
+                <img class="features-banner__logo" src="./image/banner/logo-banner.png" alt="logo-banner"  title/>
+                <h3 class=" title   features-banner__title">100% BONUS UP TO 300€</h3>
+                <p class=" features-banner__subtitle">+100 free spins on your first deposit</p>
+                <a href="#" class="button features-banner__button ">Register now</a>
+              </div>
+             </div>
+            </div>
           </section>
-          <section class="content">
-            <h2 class="visually-hidden">Content</h2>
-            <ul class="content__list list">
-              <li class="content__item--bonnus">
-                <div class="content__bonus">
-                  <p class="content__text">Online slots</p>
-                  <span class="content__span">2000+</span>
-                </div>
-              </li>
-              <li class="content__item--bonnus">
-                <div class="content__bonus">
-                  <p class="content__text">Biggest casino bonus</p>
-                  <span class="content__span">2000+</span>
-                </div>
-              </li>
-              <li class="content__item--bonnus">
-                <div class="content__bonus">
-                  <p class="content__text">Min. deposit</p>
-                  <span class="content__span">CA$1 - CA$20</span>
-                </div>
-              </li>
-              <li class="content__item--bonnus">
-                <div class="content__bonus">
-                  <p class="content__text">Gambling licenses</p>
-                  <span class="content__span">MGA, GRA, iGO</span>
-                </div>
-              </li>
-              <li class="content__item--bonnus">
-                <div class="content__bonus">
-                  <p class="content__text">Legal gambling age</p>
-                 <span class="content__span">18+</span>
-                </div>
-              </li>
-              <li class="content__item--bonnus">
-                <div class="content__bonus">
-                  <p class="content__text">Retail casinos</p>
-                 <span class="content__span">No</span>
-                </div>
-              </li>
-            </ul>
-          </section>
-       </div>
-      </section>
-      <section class=" section bookmaker position">
-        <h2 class="bookmaker__title title">Bookmaker company - Online betting</h2>
-        <img
-          src="./image/bookmaker/Tournaments.jpg"
-          alt=""
-          class="bookmaker__img"
-        />
-        <p class="bookmaker__text">
-          Formidabile sito di scommesse online, con 22Bet potrete realizzare i
-          vostri desideri, trasformando il vostro hobby preferito in una fonte
-          di guadagno. Questo allibratore è esperto di servizi di casinò e
-          sportsbook, consentendo a chiunque lo utilizzi di scegliere
-          l’esperienza di gioco che più li gratifichi.
-        </p>
-        <h3 class="bookmaker__subtitle">A 20Bet é legalizada no Brasil?</h3>
-        <p class="bookmaker__text">
-          Si possono effettuare scommesse in pochi clic e bastano appena 24 ore
-          per ricevere il denaro vinto.
-        </p>
-      </section>
-      <section class=" section bookmaker position">
-        <h2 class="bookmaker__title title">Bookmaker company - Online betting</h2>
-        <p class="bookmaker__text">
-          Formidabile sito di scommesse online, con 22Bet potrete realizzare i
-          vostri desideri, trasformando il vostro hobby preferito in una fonte
-          di guadagno. Questo allibratore è esperto di servizi di casinò e
-          sportsbook, consentendo a chiunque lo utilizzi di scegliere
-          l’esperienza di gioco che più li gratifichi.
-        </p>
-        <p class="bookmaker__text bookmaker__text--text">- text</p>
-        <p class="bookmaker__text bookmaker__text--text">- text</p>
-        <p class="bookmaker__text">- text</p>
-        <p class="bookmaker__text">
-          Si possono effettuare scommesse in pochi clic e bastano appena 24 ore
-          per ricevere il denaro vinto.
-        </p>
-        <a href="" class="button link bookmaker__button">Register now</a>
-      </section>
-      <section class="section bookmaker position">
-        <h2 class="bookmaker__title title">Bookmaker company - Online betting</h2>
-        <img
-          src="./image/bookmaker/HallOfFame.jpg"
-          alt=""
-          class="bookmaker__img"
-        />
-        <p class="bookmaker__text">
-          Formidabile sito di scommesse online, con 22Bet potrete realizzare i
-          vostri desideri, trasformando il vostro hobby preferito in una fonte
-          di guadagno. Questo allibratore è esperto di servizi di casinò e
-          sportsbook, consentendo a chiunque lo utilizzi di scegliere
-          l’esperienza di gioco che più li gratifichi.
-        </p>
-        <h3 class="bookmaker__subtitle">A 20Bet é legalizada no Brasil?</h3>
-        <p class="bookmaker__text">
-          Si possono effettuare scommesse in pochi clic e bastano appena 24 ore
-          per ricevere il denaro vinto.
-        </p>
-      </section>
-      <section class="section bookmaker position">
-        <h2 class="bookmaker__title title">Bookmaker company - Online betting</h2>
-        <p class="bookmaker__text">
-          Formidabile sito di scommesse online, con 22Bet potrete realizzare i
-          vostri desideri, trasformando il vostro hobby preferito in una fonte
-          di guadagno. Questo allibratore è esperto di servizi di casinò e
-          sportsbook, consentendo a chiunque lo utilizzi di scegliere
-          l’esperienza di gioco che più li gratifichi.
-        </p>
-        <h3 class="bookmaker__subtitle">
-          20Bet Brasil: Casa de Aposta e Cassino
-        </h3>
-        <p class="bookmaker__text">
-          Si possono effettuare scommesse in pochi clic e bastano appena 24 ore
-          per ricevere il denaro vinto.
-        </p>
-      </section>
-      <section class="section raitings position">
-        <h2 class="bookmaker__title title">
-          Bookmaker company - Online betting
-        </h2>
-        <ul class="raitings__list list">
-          <div class="raitings__wrapp raitings__wrapp--right">
-                <li class="raitings__item">
-                <p class="raitings__text">Sports Betting:</p>
-                <div class="raitings__images">
-                  <img  class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                  <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                  <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                  <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                  <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                  <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                  <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                  <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                  <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                </div>
-                <span class="raitings__span">9/10</span>
-              </li>
-              <li class="raitings__item">
-                <p class="raitings__text">Casino Games:</p>
-                <div class="raitings__images">
-                    <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                    <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                    <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                    <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                </div>
-                <span class="raitings__span">4/10</span>
-              </li>
-              <li class="raitings__item">
-                <p class="raitings__text">Welcome Bonus:</p>
-                <div class="raitings__images">
-                    <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                    <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                    <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                    <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                    <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                    <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                    <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                </div>
-                <span class="raitings__span">7/10</span>
-              </li>
+          <div class="content__wrapp">
+             
+                  <ul class="features__list features__item">
+                    <li >Huge variety of Sports to Bet On</li>
+                    <li >Wide amount of Deposit Methods</li>
+                    <li >1000+ Casino Games from Best Providers</li>
+                    <li >Generous Winnings and Jackpots</li>
+                    <li >Mobile Apps for iOS and Android</li>
+                    <li >Largest selection of Live Betting Games</li>
+                </ul>
+              
+              <div class="features__list features__table"> 
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>Online slots</td>
+                      <td>2000+</td>
+                    </tr>
+                    <tr>
+                      <td>Biggest casino bonus</td>
+                      <td>2000+</td>
+                    </tr>
+                    <tr>
+                      <td>Min. deposit</td>
+                      <td>CA$1 - CA$20</td>
+                    </tr>
+                    <tr>
+                      <td>Gambling licenses</td>
+                      <td>MGA, GRA, iGO</td>
+                    </tr>
+                    <tr>
+                      <td>Legal gambling age</td>
+                      <td>18+</td>
+                    </tr>
+                    <tr>
+                      <td>Retail casinos</td>
+                      <td>No</td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+              </div>
           </div>
-          <div class="raitings__wrapp">
-              <li class="raitings__item">
-                <p class="raitings__text">Weekly promotions:</p>
-                <div class="raitings__images">
-                    <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                    <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                    <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                    <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                    <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                    <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                    <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                    <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                    <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                    <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                </div>
-                <span class="raitings__span">10/10</span>
-              </li>
-              <li class="raitings__item">
-                <p class="raitings__text">Customer Support:</p>
-                <div class="raitings__images">
-                    <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                    <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                    <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                    <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                    <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                    <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                    <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                    <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                </div>
-                <span class="raitings__span">8/10</span>
-              </li>
-              <li class="raitings__item">
-                <p class="raitings__text">Banking Options:</p>
-                <div class="raitings__images">
-                  <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                  <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                  <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                  <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                  <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                  <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                  <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                  <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                  <img class="raitings__img" src="./image/bookmaker/Coin.svg" alt="coins" />
-                </div>
-                <span class="raitings__span">9/10</span>
-              </li>
-          </div>
-        </ul>
-        <a href="" class="button link raitings__button">Register now</a>
-      </section> 
-      <section class="section faq position">
-        <h2 class="faq__title title">FAQ</h2>
-        <ul class="faq__list list" itemscope itemtype="https://schema.org/FAQPage">
-          <li class="faq__item " itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-            <h3 class="faq__item--title js-button-expander" itemprop="name">1. A 20Bet é legalizada no Brasil?</h3>
-           <div class=" js-expand-content" itemscope  itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        </section>
+        <article class=" content review">
+          <h2 class="review__title high title">Bookmaker company - Online betting</h2>
+          <img
+            src="./image/bookmaker/Tournaments.jpg"
+            alt="Tournaments" title
+            class="image__review"
             
-              <p class="faq__item--text" itemprop="text">
+          />
+          <p>
+            Formidabile sito di scommesse online, con 22Bet potrete realizzare i
+            vostri desideri, trasformando il vostro hobby preferito in una fonte
+            di guadagno. Questo allibratore è esperto di servizi di casinò e
+            sportsbook, consentendo a chiunque lo utilizzi di scegliere
+            l’esperienza di gioco che più li gratifichi.
+          </p>
+          <h3 >A 20Bet é legalizada no Brasil?</h3>
+          <p >
+            Si possono effettuare scommesse in pochi clic e bastano appena 24 ore
+            per ricevere il denaro vinto.
+          </p>
+        </article>
+        <article class=" content review ">
+          <h2 class="review__title high title">Bookmaker company - Online betting</h2>
+          <p >
+            Formidabile sito di scommesse online, con 22Bet potrete realizzare i
+            vostri desideri, trasformando il vostro hobby preferito in una fonte
+            di guadagno. Questo allibratore è esperto di servizi di casinò e
+            sportsbook, consentendo a chiunque lo utilizzi di scegliere
+            l’esperienza di gioco che più li gratifichi.
+          </p>
+          <ul>
+            <li >text</li>
+            <li >text</li>
+            <li >text</li>
+          </ul>
+          
+          <p >
+            Si possono effettuare scommesse in pochi clic e bastano appena 24 ore
+            per ricevere il denaro vinto.
+          </p>
+          <a href="#" class="button  review__button">Register now</a>
+        </article>
+        <article class="content review">
+          <h2 class="review__title high title">Bookmaker company - Online betting</h2>
+          <img
+            src="./image/bookmaker/HallOfFame.jpg"
+            alt="HallOfFame" title
+            class="review__img"
+          />
+          <p >
+            Formidabile sito di scommesse online, con 22Bet potrete realizzare i
+            vostri desideri, trasformando il vostro hobby preferito in una fonte
+            di guadagno. Questo allibratore è esperto di servizi di casinò e
+            sportsbook, consentendo a chiunque lo utilizzi di scegliere
+            l’esperienza di gioco che più li gratifichi.
+          </p>
+          <h3 class="review__subtitle">A 20Bet é legalizada no Brasil?</h3>
+          <p >
+            Si possono effettuare scommesse in pochi clic e bastano appena 24 ore
+            per ricevere il denaro vinto.
+          </p>
+        </article>
+        <article class="content review">
+          <h2 class="review__title high title">Bookmaker company - Online betting</h2>
+          <p >
+            Formidabile sito di scommesse online, con 22Bet potrete realizzare i
+            vostri desideri, trasformando il vostro hobby preferito in una fonte
+            di guadagno. Questo allibratore è esperto di servizi di casinò e
+            sportsbook, consentendo a chiunque lo utilizzi di scegliere
+            l’esperienza di gioco che più li gratifichi.
+          </p>
+          <h3 class="review__subtitle">
+            20Bet Brasil: Casa de Aposta e Cassino
+          </h3>
+          <p >
+            Si possono effettuare scommesse in pochi clic e bastano appena 24 ore
+            per ricevere il denaro vinto.
+          </p>
+        </article>
+        <section class="content ratings ">
+          <h2 class="ratings__title title high">
+            Bookmaker company - Online betting
+          </h2>
+          <ul class="ratings__list ratings__wrapp">
+            <!-- <div class="ratings__wrapp"> -->
+                  <li >
+                  <p >Sports Betting:</p>
+                  <div class="ratings__images">
+                    <img   src="./image/bookmaker/Coin.svg" alt="coins"  title/>
+                    <img src="./image/bookmaker/Coin.svg" alt="coins"  title/>
+                    <img  src="./image/bookmaker/Coin.svg" alt="coins"  title/>
+                    <img  src="./image/bookmaker/Coin.svg" alt="coins"  title/>
+                    <img  src="./image/bookmaker/Coin.svg" alt="coins"  title/>
+                    <img  src="./image/bookmaker/Coin.svg" alt="coins"  title/>
+                    <img  src="./image/bookmaker/Coin.svg" alt="coins"  title/>
+                    <img  src="./image/bookmaker/Coin.svg" alt="coins"  title/>
+                    <img  src="./image/bookmaker/Coin.svg" alt="coins"  title/>
+                  </div>
+                  <span >9/10</span>
+                </li>
+                <li class="ratings__item">
+                  <p>Casino Games:</p>
+                  <div class="ratings__images">
+                      <img  src="./image/bookmaker/Coin.svg" alt="coins"  title/>
+                      <img  src="./image/bookmaker/Coin.svg" alt="coins"  title/>
+                      <img  src="./image/bookmaker/Coin.svg" alt="coins"  title/>
+                      <img  src="./image/bookmaker/Coin.svg" alt="coins"  title/>
+                  </div>
+                  <span >4/10</span>
+                </li>
+                <li >
+                  <p >Welcome Bonus:</p>
+                  <div class="ratings__images">
+                      <img src="./image/bookmaker/Coin.svg" alt="coins"  title/>
+                      <img src="./image/bookmaker/Coin.svg" alt="coins"  title/>
+                      <img src="./image/bookmaker/Coin.svg" alt="coins"  title/>
+                      <img src="./image/bookmaker/Coin.svg" alt="coins"  title/>
+                      <img src="./image/bookmaker/Coin.svg" alt="coins"  title/>
+                      <img src="./image/bookmaker/Coin.svg" alt="coins"  title/>
+                      <img src="./image/bookmaker/Coin.svg" alt="coins"  title/>
+                  </div>
+                  <span >7/10</span>
+                </li>
+            <!-- </div> -->
+            <!-- <div class="ratings__wrapp"> -->
+                <li >
+                  <p >Weekly promotions:</p>
+                  <div class="ratings__images">
+                      <img src="./image/bookmaker/Coin.svg" alt="coins" title/>
+                      <img src="./image/bookmaker/Coin.svg" alt="coins" title/>
+                      <img src="./image/bookmaker/Coin.svg" alt="coins" title/>
+                      <img src="./image/bookmaker/Coin.svg" alt="coins" title/>
+                      <img src="./image/bookmaker/Coin.svg" alt="coins" title/>
+                      <img src="./image/bookmaker/Coin.svg" alt="coins" title/>
+                      <img src="./image/bookmaker/Coin.svg" alt="coins" title/>
+                      <img src="./image/bookmaker/Coin.svg" alt="coins" title/>
+                      <img src="./image/bookmaker/Coin.svg" alt="coins" title/>
+                      <img src="./image/bookmaker/Coin.svg" alt="coins" title/>
+                  </div>
+                  <span >10/10</span>
+                </li>
+                <li >
+                  <p >Customer Support:</p>
+                  <div class="ratings__images">
+                      <img src="./image/bookmaker/Coin.svg" alt="coins"  title/>
+                      <img src="./image/bookmaker/Coin.svg" alt="coins"  title/>
+                      <img src="./image/bookmaker/Coin.svg" alt="coins"  title/>
+                      <img src="./image/bookmaker/Coin.svg" alt="coins"  title/>
+                      <img src="./image/bookmaker/Coin.svg" alt="coins"  title/>
+                      <img src="./image/bookmaker/Coin.svg" alt="coins"  title/>
+                      <img src="./image/bookmaker/Coin.svg" alt="coins"  title/>
+                      <img src="./image/bookmaker/Coin.svg" alt="coins"  title/>
+                  </div>
+                  <span >8/10</span>
+                </li>
+                <li >
+                  <p >Banking Options:</p>
+                  <div class="ratings__images">
+                    <img src="./image/bookmaker/Coin.svg" alt="coins" title=""/>
+                    <img src="./image/bookmaker/Coin.svg" alt="coins" title=""/>
+                    <img src="./image/bookmaker/Coin.svg" alt="coins" title=""/>
+                    <img src="./image/bookmaker/Coin.svg" alt="coins" title=""/>
+                    <img src="./image/bookmaker/Coin.svg" alt="coins" title=""/>
+                    <img src="./image/bookmaker/Coin.svg" alt="coins" title=""/>
+                    <img src="./image/bookmaker/Coin.svg" alt="coins" title=""/>
+                    <img src="./image/bookmaker/Coin.svg" alt="coins" title=""/>
+                    <img src="./image/bookmaker/Coin.svg" alt="coins" title=""/>
+                  </div>
+                  <span >9/10</span>
+                </li>
+            <!-- </div> -->
+          </ul>
+          <a href="" class="button  ratings__button">Register now</a>
+        </section> 
+
+          <section class="content faq ">
+        <h2 class="title high faq__title ">FAQ</h2>
+        <ul class="faq__list " itemscope itemtype="https://schema.org/FAQPage">
+          <li class="faq__item " itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h3 class="title mini faq-item__title js-button-expander" itemprop="name">1. A 20Bet é legalizada no Brasil?</h3>
+           <div class="faq__question js-expand-content" itemscope  itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            
+              <p  itemprop="text">
                 Sim, a casa de apostas tem licença emitida por Curaçao, que é
                 reconhecida no Brasil e a permite atuar por aqui.
               </p>
          
            </div>
           </li>
-          <li class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-            <h3 class="faq__item--title js-button-expander" itemprop="name">2. Existe aplicativo da 20Bet?</h3>
-            <div class=" js-expand-content" itemscope  itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p class="faq__item--text" itemprop="text">
+          <li  class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h3 class="title mini faq-item__title js-button-expander" itemprop="name">2. Existe aplicativo da 20Bet?</h3>
+            <div class="faq__question js-expand-content" itemscope  itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p  itemprop="text">
               Sim, disponível para sistemas operacionais iOS e Android.
             </p>
           </div>
           </li>
           <li class="faq__item">
-            <h3 class="faq__item--title js-button-expander">
+            <h3 class="title mini faq-item__title js-button-expander">
               3. Tem bônus de boas-vindas na 20Bet?
             </h3>
-            <div class=" js-expand-content">
-            <p class="faq__item--text">
+            <div class="faq__question js-expand-content">
+            <p >
               O pacote especial para novos usuários da 20Bet paga 100% sobre o
               primeiro depósito, com limite de 600 BRL.
             </p>
           </div>
           </li>
           <li class="faq__item">
-            <h3 class="faq__item--title js-button-expander">4. Question</h3>
-            <div class=" js-expand-content">
-            <p class="faq__item--text">Lorem ipsum dolor sit amet?</p>
+            <h3 class="title mini faq-item__title js-button-expander">4. Question</h3>
+            <div class="faq__question js-expand-content">
+            <p >Lorem ipsum dolor sit amet?</p>
           </div>
           </li>
         </ul>
       </section>
+
+      </section>
     </main>
-    <footer class="section footer position">
+    <footer class="footer footer-content ">
       <h2 class="visually-hidden">Footer</h2>
-      <img src="./image/footer/line.png" alt="line">
-      <ul class="footer__list list">
+      <img src="./image/footer/line.png" alt="line" title>
+      <ul class="footer__list ">
         <li class="footer__item">
-          <a href="" class="footer__link link">RESPONSIBLE GAMING</a>
+          <a href="#" >RESPONSIBLE GAMING</a>
         </li>
         <li class="footer__item">
-          <a href="" class="footer__link link">TERMS AND CONDITIONS</a>
+          <a href="#" >TERMS AND CONDITIONS</a>
         </li>
         <li class="footer__item">
-          <a href="" class="footer__link link">PRIVACY POLICY</a>
+          <a href="#" >PRIVACY POLICY</a>
         </li>
         <li class="footer__item">
-          <a href="" class="footer__link link">BONUSES - GENERAL TERMS</a>
+          <a href="#" >BONUSES - GENERAL TERMS</a>
         </li>
         <li class="footer__item">
-          <a href="" class="footer__link link">FAQ</a>
+          <a href="#" >FAQ</a>
         </li>
         <li class="footer__item">
-          <a href="" class="footer__link link">ABOUT US</a>
+          <a href="#" >ABOUT US</a>
         </li>
         <li class="footer__item">
-          <a href="" class="footer__link link">CONTACT US</a>
+          <a href="#" >CONTACT US</a>
         </li>
       </ul>
 
-      <ul class="footer-card__list list">
-        <li class="footer-card__item">
+      <ul class="footer-card__list ">
+        <li >
           <a href="" class="footer-card__link link">
             <img src="./image/footer/perfect.png" alt="perfect money" />
           </a>
         </li>
-        <li class="footer-card__item">
+        <li >
           <a href="" class="footer-card__link link">
             <img src="./image/footer/pay.png" alt="pay pal" />
           </a>
         </li>
-        <li class="footer-card__item">
+        <li >
           <a href="" class="footer-card__link link">
             <img src="./image/footer/safety.png" alt="safety pay" />
           </a>
         </li>
-        <li class="footer-card__item">
+        <li >
           <a href="" class="footer-card__link link">
             <img src="./image/footer/jeton.png" alt="jeton" />
           </a>
         </li>
-        <li class="footer-card__item">
+        <li >
           <a href="" class="footer-card__link link">
             <img src="./image/footer/scrill.png" alt="skrill" />
           </a>
         </li>
-        <li class="footer-card__item">
+        <li >
           <a href="" class="footer-card__link link">
             <img src="./image/footer/bitcoin.png" alt="bitcoin" />
           </a>
@@ -541,8 +486,7 @@
       <img class="footer__arrow" src="./image/footer/Arrow.png" alt="Arrow UP" onclick="scrollToTop()" />
     </footer>
     <script src="./js/expander.js"></script>
-    <script src="./js/overlay.js"></script>
+    <script src="./js/button-sidebar.js"></script>
     <script src="./js/arrowUp.js"></script>
-    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
