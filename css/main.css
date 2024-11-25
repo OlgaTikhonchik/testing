@@ -11,6 +11,11 @@ body {
   color: #ffffff;
 }
 
+@media screen and (max-width:800px) {
+  .body{
+  font-size: 14px;}
+}
+
 .content {
   display: block;
   
@@ -38,7 +43,7 @@ h4,
 .title {
   display: block;
   position: relative;
-  font-size: 32px;
+  /* font-size: 32px; */
   font-weight: 700;
   line-height: 48px;
   text-align: center;
@@ -58,6 +63,13 @@ title.high {
   font-size: 32px;
   line-height: 40px;
   width: auto;
+}
+
+@media screen and (max-width:800px) {
+ h2,
+ title.high {
+  font-size: 24px;
+  line-height: 32px;}
 }
 
 h2::before,
@@ -88,6 +100,17 @@ h2::after,
   background: url(../image/bookmaker/right.svg) no-repeat center center /
     contain;
   right: 0;
+}
+
+@media screen and (max-width:800px) {
+  h2::before,
+.title.higt::before,
+h2::after,
+.title.higt::after {
+
+  width: 45px;
+  height: 18px;
+}
 }
 
 h3,
@@ -133,6 +156,7 @@ article h4,
 .desc h4 {
   margin-top: 24px;
 }
+
 
 .button {
   display: inline-block;
@@ -207,6 +231,14 @@ article h4,
   max-width: 1600px;
   padding: 15px 30px;
   margin: 0 auto;
+}
+
+@media screen and (max-width:748px) {
+  .header,
+.main,
+.footer {
+  padding: 15px;
+}
 }
 
 /* ------------HEADER--------------- */
@@ -571,7 +603,7 @@ menu ul li {
   flex: 0 0 240px;
 }
 
-@media screen and (max-width:1188px) {
+@media screen and (max-width:1242px) {
  .sidebar-wrapper{
     display: none;
   }
@@ -722,11 +754,38 @@ menu ul li {
   .hero{
     padding: 40px 0 0 50px;
   }
+
+  .content-wrapper{
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width:800px) {
   .hero{
     padding: 30px 0 0 50px;
+   
+  }
+
+  
+}
+
+@media screen and (max-width:764px) {
+  .hero{
+    
+    padding: 50px 10px 20px 40px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .hero{
+    background: url(../image/hero/christoph-schadl-sherlock.png) no-repeat center center / contain;
+    overflow: hidden;
+    padding: 20px 0 10px 30px;
+   
+  }
+
+  .hero__images{
+    display: none;
   }
 }
 
@@ -757,6 +816,22 @@ menu ul li {
   align-items: center;
 }
 
+@media screen and (max-width:764px) {
+  .hero__wrapper{
+    
+    position: relative;
+    max-height: 100%;
+    flex-direction: column;
+
+    
+  }
+
+  .hero__images{
+    position: absolute;
+    opacity: 0.7;
+  }
+}
+
 .hero__data {
   display: block;
   position: relative;
@@ -784,13 +859,33 @@ menu ul li {
   }
 }
 
+@media screen and (max-width:764px) {
+  .hero__title{
+    font-size: 24px;
+  }
+
+  .hero__subtitle{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .hero__title{
+    font-size: 18px;
+  }
+
+  .hero__subtitle{
+    font-size: 12px;
+  }
+}
+
 .hero__button {
   margin-top: 24px;
 }
 
 .image {
-  /* flex: 1 1 570px; */
-  /* flex: 1 1 380px; */
+  flex: 1 1 570px;
+  
 }
 
 .image img {
@@ -818,12 +913,20 @@ menu ul li {
   }
 }
 
+
 .features__wrapp {
   position: relative;
   display: flex;
   overflow: hidden;
   border-radius: 12px;
   margin-right: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .features__wrapp {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .features__banner {
@@ -890,9 +993,53 @@ menu ul li {
 .features-banner__logo {
   margin-bottom: 84px;
 }
+@media screen and (max-width:800px) {
+  .features-banner__logo {
+   max-width: 200px;
+   margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .features-banner__logo {
+   max-width: 270px;
+   
+  }
+}
+
 .features-banner__title {
   margin-bottom: 23px;
   white-space: nowrap;
+}
+
+@media screen and (max-width:900px) {
+  .features-banner__title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .features-banner__title {
+    font-size: 32px;
+    margin-bottom: 50px;
+
+    .features-banner__subtitle{
+      font-size: 18px;
+    }
+  }
+  
+}
+
+@media screen and (max-width:480px) {
+  .features-banner__title {
+    font-size: 32px;
+    margin-bottom: 30px;
+
+    .features-banner__subtitle{
+      font-size: 16px;
+    }
+  }
+  
 }
 
 .features-banner__title::before{
@@ -1013,6 +1160,12 @@ menu ul li {
   width: 50%;
   }
  }
+
+ @media screen and (max-width:510px) {
+  .features__table td  {
+  width: 60%;
+  }
+ }
  
  @media screen and (max-width:1100px) {
   .features__table td +td  {
@@ -1023,6 +1176,12 @@ menu ul li {
  @media screen and (max-width:800px) {
   .features__table td +td  {
   width: 50%;
+  }
+ }
+
+ @media screen and (max-width:510px) {
+  .features__table td +td  {
+  width: 40%;
   }
  }
 
@@ -1053,6 +1212,17 @@ article ul {
 
 .review h3,.review p{
   width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .review h2,.ratings h2,
+.faq h2{
+ 
+  
+  padding: 0 60px;
+  
+ 
+}
 }
 
 
@@ -1092,9 +1262,6 @@ article img {
   margin: 20px auto 0px auto;
   
 }
-
-
-
 
 
 /* ------------RATING------------ */
@@ -1148,7 +1315,7 @@ article img {
   
 }
 
-@media screen and (max-width:1600px) {
+@media screen and (max-width: 1600px) {
   .ratings__images{
     
     gap:6px;
@@ -1158,17 +1325,40 @@ article img {
   
 }
 
-@media screen and (max-width:1380px) {
+@media screen and (max-width: 1370px) {
   .ratings__images{
     
-    gap:6px;
+    gap:4px;
     
   }
 
-  .review__images img{
-    width: 15px;height: 15px;
+  .ratings__images img{
+    width: 13px;
+    height: 13px;
+  }
+
+  .ratings__list li  p{
+    font-size: 14px;
   }
 }
+
+@media screen and (max-width: 1189px) {
+  .ratings__images{
+    
+    gap:11px;
+    
+  }
+
+  .ratings__images img{
+    width: 19px;
+    height: 20px;
+  }
+
+  .ratings__list li  p{
+    font-size: 16px;
+  }
+}
+
 
 
 
@@ -1227,6 +1417,8 @@ article img {
 .faq-item__title.active::before {
   transform: rotate(180deg);
 }
+
+
 
 
 /* --------------FOOTER--------------- */
@@ -1289,8 +1481,10 @@ article img {
 
 
 .footer__item{
+  /* display: flex; */
   padding-right: 16px;
 }
+
 
 .footer__item + .footer__item{
   border-left: 1px solid #fff72e;
@@ -1301,15 +1495,20 @@ article img {
 .footer__item a{
   color: #ffffff;
 }
+
+/* .footer__item a:nth-child(2n){
+  color:#fff72e
+} */
+
 .footer-card__list{
   padding-bottom: 32px;
   gap: 12px;
 }
 
  @media screen and (max-width:840px) {
-  .footer-card__list li  {
+  /* .footer-card__list li  {
     flex-basis: calc((100% - 30px) / 4);
-  }
+  } */
 
   
 } 
@@ -1340,14 +1539,35 @@ article img {
       
 }
 
+@media screen and (max-width:400px) {
+  .footer__box{
+    flex-direction: row;
+    
+  
+}}
+
 .footer__box p{
   margin-left: 80px;
   
 }
 
+@media screen and (max-width:400px) {
+  .footer__box p{
+    margin-left: 10px;
+    
+  } 
+}
+
 .footer__box img{
   margin-right: 80px;
   
+}
+
+@media screen and (max-width:400px) {
+  .footer__box img{
+    margin-right: 10px;
+    
+  } 
 }
 
 .footer__arrow{
@@ -1356,3 +1576,5 @@ article img {
   right: 15px;
   cursor: pointer;
 }
+
+
