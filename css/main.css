@@ -13,6 +13,7 @@ body {
 
 .content {
   display: block;
+  
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -76,22 +77,28 @@ h2::after,
 .title.higt::after {
   content: "";
   display: block;
-  /* position: relative; */
+  
   position: absolute;
   top: 0;
   bottom: 0;
-  /* left: 0; */
-  margin: auto;
+ 
   width: 64px;
   height: 18px;
   background: url(../image/bookmaker/left.svg) no-repeat center center / contain;
+  margin: auto;
+  
+}
+
+h2::before,
+.title.higt::before {
+  left:0;
 }
 
 h2::after,
 .title.higt::after {
   background: url(../image/bookmaker/right.svg) no-repeat center center /
     contain;
-  /* right: 0; */
+  right: 0;
 }
 
 h3,
@@ -224,18 +231,117 @@ article h4,
   z-index: 1;
 }
 
-.logo {
+@media screen and(max-width:1188px) {
+  
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+  padding-left: 10px;
+  padding-right: 10px;}
+}
+
+.header__logo {
   display: block;
   position: relative;
-  flex: 0 0 240px;
+ 
+  max-width: 123px;
+  margin-right: auto;
 }
+
+
+
+@media screen and(max-width:400px) {
+  .logo img{
+    
+    min-width: 50px;
+  }
+}
+
+
+  .header__btn-menu{
+    display: block;
+    flex: 0 1 auto;
+    min-width: 0;
+    border: 1px solid #2d0d0d;
+    background:#2d0d0d;
+    padding: 15px;
+    margin-left: 15px;
+    order: 3;
+    
+  }
+
+@media screen and (max-width: 1188px) {
+  .header__btn-menu.active {
+    background-color: #2d0d0d;
+  }
+}
+
+@media screen and (min-width: 1188px) {
+  .header__btn-menu {
+    display: none;
+  }
+}
+
+
+
+
+svg {
+  position: relative;
+  fill: #ffffff;
+  line-height: 1;
+  vertical-align: 1;
+}
+
+@media screen and (max-width: 1188px) {
+  .header__btn-menu svg {
+    display: block;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1188px) {
+  .header__btn-menu svg rect {
+    transform-origin: 50% 50%;
+    transition: all 0.5s;
+  }
+}
+
+@media screen and (max-width: 1188px) {
+  .header__btn-menu.active svg rect:nth-child(1) {
+    x: -2px;
+    y: 6px;
+    width: 20px;
+    transform: rotate(225deg);
+  }
+
+  .header__btn-menu.active svg rect:nth-child(3) {
+    opacity: 0;
+  }
+
+  .header__btn-menu.active svg rect:nth-child(2) {
+    x: -2px;
+    y: 6px;
+    width: 20px;
+    transform: rotate(135deg);
+  }
+}
+
+@media screen and (max-width: 1188px) {
+  .header__btn-menu.active ~ .header__menu {
+    top: 100%;
+    height: 100vh;
+    opacity: 1;
+    z-index: 10;
+
+    
+  }
+}
+
 
 .logo img {
   display: block;
-  position: relative;
-  width: auto;
-  max-height: 50px;
-  margin: 0 auto;
+  
 }
 
 .menu {
@@ -248,6 +354,7 @@ article h4,
   justify-content: center;
   align-items: center;
 }
+
 
 menu ul li {
   display: block;
@@ -275,11 +382,70 @@ menu ul li {
   display: none;
 }
 
+
+
+@media screen and (max-width: 1188px) {
+  .header__menu  {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1188px) {
+  .header__menu.active {
+   
+      display: block;
+      position: absolute;
+      top: -100vh;
+      left: 0;
+      width: 100%;
+      height: auto;
+  
+      overflow: auto;
+      background-color: #2d0d0d;
+      text-align: center;
+      z-index: -1;
+      padding: 64px 32px;
+      transition: all 0.5s;
+    
+
+      li a {
+        font-size: 16px;
+      }
+  }
+
+  
+}
+
+@media screen and (max-width: 1188px) {
+  
+    
+    
+  }
+
+
+@media screen and (max-width: 1188px) {
+  .header__menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+
+    
+  }
+
+  
+
+
+}
+
 .header__menu ul li {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+
 
 .header__menu ul li:not(:last-child)::after {
   content: "";
@@ -291,20 +457,103 @@ menu ul li {
   vertical-align: middle;
 }
 
+@media screen and (max-width:1188px) {
+  .header__menu ul li::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 12px;
+    background: url(../image/header/romb.svg) no-repeat center center / contain;
+    vertical-align: middle;
+  }
+
+  .header__menu ul li::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 12px;
+    background: url(../image/header/romb.svg) no-repeat center center / contain;
+    vertical-align: middle;
+  }
+}
+
 .header__button-login {
   margin: auto 20px auto auto;
 }
+
+@media screen and (max-width: 800px) {
+  .header__button-login {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1188px) {
+  .menu .header__button-login  {
+    display: inline-block;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .menu .header__button-login  {
+    margin: 0;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .menu .header__button-login  {
+    margin: 0;
+    
+  }
+}
+
+
 
 .header__button-register {
   margin: auto 20px auto 0;
 }
 
+@media screen and (max-width: 800px) {
+  .header__button-register {
+    
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .header__button-register {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .menu .header__button-register  {
+    display: inline-block;
+    margin: 0 ;
+    margin-top: 10px;
+  }
+}
+
+
+
+
 .header__lang {
   display: block;
   position: relative;
-  overflow: hidden;
+  
   border-radius: 50%;
 }
+
+@media screen and (max-width: 575px) {
+  .header__lang {
+    margin-left: auto;
+    
+  }
+}
+
 
 .header__lang img {
   display: block;
@@ -450,13 +699,12 @@ menu ul li {
 /* -------------HERO-------------- */
 
 .hero {
-  /* width: 100%; */
+ 
   max-width: 1280px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  padding-left: 106px;
-  padding-top: 72px;
-  padding-bottom: 52px;
+  padding: 72px 0 0 106px;
+  
 }
 
 .hero::after {
@@ -510,7 +758,8 @@ menu ul li {
 }
 
 .image {
-  flex: 1 1 570px;
+  /* flex: 1 1 570px; */
+  /* flex: 1 1 380px; */
 }
 
 .image img {
@@ -547,11 +796,16 @@ menu ul li {
   flex-direction: column;
 }
 
-.features__banner > * {
+/* .features__banner > * {
   flex: 1 1 50%;
+} */
+.features-banner__background{
+  height: 100%;
 }
 
 .features-banner__background img {
+  width: 100%;
+  height: 100%;
   border-radius: 12px;
   background: linear-gradient(
     180deg,
@@ -630,7 +884,7 @@ menu ul li {
   width: 20px;
   height: 20px;
   background: url(../image/Check.svg) no-repeat center center/contain;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   margin-right: 20px;
 }
 
@@ -669,6 +923,24 @@ article ul {
   position: relative;
 }
 
+
+
+.review h2,.ratings h2,
+.faq h2{
+ 
+  width: max-content;
+  padding: 0 80px;
+  
+ 
+}
+
+.review,.ratings,.faq{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
 article ul > li {
   position: relative;
   padding-left: 20px;
@@ -699,24 +971,17 @@ article img {
 
 .review__button {
   margin: 20px auto 0px auto;
+  
 }
 
-.review__title::before,
-.ratings__title::before,
-.faq__title::before {
-  left: 200px;
-}
 
-.review__title::after,
-.ratings__title::after,
-.faq__title::after {
-  right: 200px;
-}
+
+
 
 /* ------------RATING------------ */
 
 .ratings__list {
-  /* display: flex; */
+  
   column-count: 2;
   margin-top: 22px;
 }
@@ -741,18 +1006,28 @@ article img {
   margin: 30px auto 0px auto;
 }
 
-/* .ratings__wrapp {
-  width: calc(50% - 10px);
-} */
-
-/* .ratings__wrapp + .ratings__wrapp {
-  margin-left: 20px;
-} */
-.ratings__images img:not(:last-child) {
-  margin-right: 11px;
+.ratings__images{
+  display: flex;
+  flex-wrap: wrap;
+  gap:11px;
+  
 }
 
+/* .ratings__images img:not(:last-child) {
+  margin-right: 11px;
+} */
+
+
+
+
+
+
 /* ----------FAQ----------------- */
+
+.faq__list{
+  margin-top: 26px;
+}
+
 .faq__list li{
 
   border-radius: 12px;
@@ -833,14 +1108,31 @@ article img {
   color: #ffffff;
 }
 .footer-card__list{
-  margin-bottom: 32px;
+  padding-bottom: 32px;
   gap: 12px;
 }
+
+.footer-card__list::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 247, 46, 0) 1.44%,
+    rgb(255, 247, 46) 50.082%,
+    rgba(255, 247, 46, 0) 98.724%
+  );
+}
+
 .footer__box{
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-top: 34px;
       
 }
 

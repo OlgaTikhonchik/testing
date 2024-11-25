@@ -1,7 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   const menuButton = document.querySelector(".header__btn-menu");
-  const nav = document.querySelector(".header__nav");
+  const nav = document.querySelector(".header__menu");
 
   menuButton.addEventListener("click", function () {
     nav.classList.toggle("active"); 
