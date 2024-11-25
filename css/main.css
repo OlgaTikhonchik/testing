@@ -1123,13 +1123,19 @@ article img {
     inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   padding: 6px 20px 6px 20px;
   margin-bottom: 21px;
+ 
   ;
  }
   
 
-.ratings__list li:nth-child(3n) {
+ .ratings__list li:nth-child(3n) {
   margin-bottom: 0;
 }
+
+@media screen and (max-width:1188px) {
+  .ratings__list li:not(:last-child) {
+    margin-bottom: 21px;}
+} 
 
 .ratings__button {
   margin: 30px auto 0px auto;
@@ -1262,6 +1268,16 @@ article img {
   justify-content: center;
   margin-top: 32px;
   
+
+  
+}
+
+@media screen and (max-width:1400px) {
+  .footer ul {
+    flex-wrap: wrap;
+   
+    
+  }
 }
 @media screen and (max-width:1270px) {
   .footer ul {
