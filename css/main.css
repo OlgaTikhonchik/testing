@@ -211,8 +211,7 @@ article h4,
 }
 
 .background {
-  /* display: block;
-  position: absolute; */
+  
   display: block !important;
   position: absolute !important;
   top: 0;
@@ -228,7 +227,7 @@ article h4,
   position: relative;
   width: 100%;
   height: 100%;
-  /* object-fit: cover; */
+  
 }
 
 .header,
@@ -793,7 +792,7 @@ menu ul li {
 @media screen and (max-width:480px) {
   .hero{
     min-height: 380px;
-    /* max-width: 480px; */
+   
     background: url(../image/hero/christoph-schadl-sherlock.png) no-repeat center center / contain;
     overflow: hidden;
     padding: 80px 30px 40px 70px;
@@ -975,13 +974,6 @@ menu ul li {
   }
 }
 
-/* @media screen and (max-width: 480px) {
-  .features__wrapp {
-    width: 100%;
-   
-
-  }
-} */
 
 .features__banner {
   position: relative;
@@ -991,9 +983,7 @@ menu ul li {
   flex-direction: column;
 }
 
-/* .features__banner > * {
-  flex: 1 1 50%;
-} */
+
 .features-banner__background{
   position: relative;
   height: 100%;
@@ -1206,7 +1196,7 @@ menu ul li {
 
 .features__table tr {
   display: flex;
-  /* display: table-row; */
+  
   align-items: center;
   margin-top: 6px;
 }
@@ -1215,16 +1205,16 @@ menu ul li {
   margin-top: 0;
 }
 .features__table td {
-  /* width: calc(50% - 10px); */
+ 
   width: 40%;
   border-radius: 12px 0px 0px 12px;
   background: linear-gradient(270deg, rgb(45, 13, 13), rgb(19, 4, 4) 100%);
   white-space: nowrap;
   padding: 6.5px 16px;
-  /* margin-top: 4px; */
+  
 }
 .features__table td + td {
-  /* width: 100%; */
+ 
   width: 60%;
   border-radius: 0px 12px 12px 0px;
 }
@@ -1313,7 +1303,7 @@ article ul {
 .review h2,.ratings h2,
 .faq h2{
  
-  /* width: max-content; */
+  
   width: auto;
   flex-wrap: wrap;
   padding: 0 80px;
@@ -1606,9 +1596,6 @@ article img {
  
   flex-direction: column;
   
-  /* margin-left: auto;
-  margin-right: auto; */
-  /* padding: 20px 30px 33px 300px; */
 }
 
 .footer__menu::before{
@@ -1649,13 +1636,6 @@ article img {
 }
 
 
-/* .footer ul {
-   display: flex;
-  justify-content: center;
-  margin-top: 32px; 
-
-  
-} */
 
 .footer-card__list, .footer__menu-list{
   display: flex;
@@ -1722,13 +1702,6 @@ article img {
   }
 }
 
-
-/* .footer__item + .footer__item{
-  border-left: 1px solid #fff72e;
-  color:#ffffff;
-  padding-left: 16px;
-} */
-
 .footer__item a{
   color: #ffffff;
 }
@@ -1748,15 +1721,6 @@ article img {
   padding-bottom: 32px;
   gap: 12px;
 }
-
- @media screen and (max-width:840px) {
-  /* .footer-card__list li  {
-    flex-basis: calc((100% - 30px) / 4);
-  } */
-
-  
-} 
-
 
 
 .footer-card__list::after {
