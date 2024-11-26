@@ -1788,6 +1788,7 @@ article img {
   right: 15px;
   bottom: 30vh;
   background: url(../image/footer/ArrowUP.svg) no-repeat center center / contain ;
+  opacity: 0.5;
   z-index: 100;
 }
 
