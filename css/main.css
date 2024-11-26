@@ -1696,7 +1696,7 @@ article img {
   
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:480px) {
   .footer__item:not(:last-child)::after {
     display: none;
   }
@@ -1780,13 +1780,24 @@ article img {
 
 .footer__arrow{
   display: inline-block;
-  position: absolute;
+ 
+  position: fixed;
   width: 42px;
   height: 42px;
-  top: 5px;
+  
   right: 15px;
+  bottom: 30vh;
   background: url(../image/footer/ArrowUP.svg) no-repeat center center / contain ;
   z-index: 100;
+}
+
+@media screen and(max-width:320px) {
+
+  .footer__arrow{
+    top: 5px;
+    right: 10px;
+    
+  }
 }
 
 @media screen and(max-width:320px) {
