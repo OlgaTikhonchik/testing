@@ -206,13 +206,15 @@
         </section> 
          <article class=" content review">
           <h2 class="review__title high title">Bookmaker company - Online betting</h2>
-          <img
+          <div class="review__images">
+            <img
             src="./image/bookmaker/Tournaments.jpg"
             alt="Tournaments" title
-            class="image__review"
+            class=""
             
           />
-          <p>
+          </div>
+          <p class="review__desc">
             Formidabile sito di scommesse online, con 22Bet potrete realizzare i
             vostri desideri, trasformando il vostro hobby preferito in una fonte
             di guadagno. Questo allibratore è esperto di servizi di casinò e
@@ -228,11 +230,13 @@
         
         <article class="content review">
           <h2 class="review__title high title">Bookmaker company - Online betting</h2>
-          <img
+          <div class="review__img">
+            <img
             src="./image/bookmaker/HallOfFame.jpg"
             alt="HallOfFame" title
-            class="review__img"
+            
           />
+          </div>
           <p class="review__desc">
             Formidabile sito di scommesse online, con 22Bet potrete realizzare i
             vostri desideri, trasformando il vostro hobby preferito in una fonte
@@ -402,33 +406,36 @@
 
       </section>
     </main> 
-    <footer class="footer footer-content ">
+    <footer class="footer footer__content ">
      
-      <img class="footer__line"
-      src="./image/footer/line.png" alt="line" title>
-      <ul class="footer__list ">
-        <li class="footer__item">
-          <a href="#" >RESPONSIBLE GAMING</a>
-        </li>
-        <li class="footer__item">
-          <a href="#" >TERMS AND CONDITIONS</a>
-        </li>
-        <li class="footer__item">
-          <a href="#" >PRIVACY POLICY</a>
-        </li>
-        <li class="footer__item">
-          <a href="#" >BONUSES - GENERAL TERMS</a>
-        </li>
-        <li class="footer__item">
-          <a href="#" >FAQ</a>
-        </li>
-        <li class="footer__item">
-          <a href="#" >ABOUT US</a>
-        </li>
-        <li class="footer__item">
-          <a href="#" >CONTACT US</a>
-        </li>
-      </ul>
+      <!-- <img class="footer__line"
+      src="./image/footer/line.png" alt="line" title> -->
+      <!-- <ul class="footer__list "> -->
+      <div class="menu footer__menu">
+        <ul class="footer__menu-list">
+          <li class="footer__item">
+            <a href="#" >RESPONSIBLE GAMING</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" >TERMS AND CONDITIONS</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" >PRIVACY POLICY</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" >BONUSES - GENERAL TERMS</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" >FAQ</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" >ABOUT US</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" >CONTACT US</a>
+          </li>
+        </ul>
+      </div>
 
       <ul class="footer-card__list">
         <li >
@@ -466,7 +473,8 @@
           <p>Gambling can be addictive. Play responsibly.</p>
         <img src="./image/footer/limit.png" alt="age limit" title=""/>
       </div>
-      <img class="footer__arrow" src="./image/footer/Arrow.png" alt="Arrow UP" onclick="scrollToTop()" />
+      <button class="footer__arrow" src="" alt="Arrow UP" onclick="scrollToTop()" ></button>
+      <!-- <img class="footer__arrow" src="./image/footer/Arrow.png" alt="Arrow UP" onclick="scrollToTop()" /> -->
     </footer>
     <script src="./js/expander.js"></script>
     <script src="./js/button-sidebar.js"></script>
