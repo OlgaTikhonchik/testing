@@ -617,6 +617,8 @@ menu ul li {
  .sidebar-wrapper{
     display: none;
   }
+
+
 }
 
 .sidebar {
@@ -731,6 +733,21 @@ menu ul li {
   color: #ffffff;
   margin-top: 5px;
 }
+
+.sidebar__content{
+  display: none;
+}
+
+@media screen and (max-width:1242px) {
+  .sidebar__content{
+    display: block;
+    padding: 15px;
+  }
+ 
+   
+ }
+
+
 
 /* --------------   CONTENT-WRAPPER--------------- */
 
