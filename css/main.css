@@ -1497,11 +1497,31 @@ article img {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
   .ratings__list li span{
     
     display: none;
     
+  }
+
+  .menu .header__button-login {
+    margin: 0;
+    
+}
+}
+
+
+
+
+@media screen and (max-width: 370px) {
+  .ratings__list li span{
+    
+    display: block;
+    
+  }
+
+  .ratings__images img{
+   display: none;
   }
 }
 
